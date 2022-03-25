@@ -67,9 +67,9 @@ def run():
     if action == "check balance":
         sys.exit(f"Your current account balance is {account['balance']: .2f}")
     elif action == "deposit":
-        account = make_deposit(account)
+        account = make_deposit(account) #'account' is adjusted account balance after deposit
     else:
-        account = make_withdrawal(account)
+        account = make_withdrawal(account) #'account' is adjusted account balance after withdrawal
 
     # Prints the adjusted balance.
     print(
